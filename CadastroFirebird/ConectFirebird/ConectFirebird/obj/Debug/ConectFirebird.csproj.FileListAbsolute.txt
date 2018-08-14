@@ -1,0 +1,13 @@
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\bin\Debug\ConectFirebird.exe.config
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\bin\Debug\ConectFirebird.exe
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\bin\Debug\ConectFirebird.pdb
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.csprojAssemblyReference.cache
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.Form1.resources
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.Properties.Resources.resources
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.csproj.GenerateResource.cache
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.csproj.CoreCompileInputs.cache
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.csproj.CopyComplete
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.exe
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.pdb
+C:\Users\wagner\source\repos\ConectFirebird\ConectFirebird\obj\Debug\ConectFirebird.ListarCadastros.resources
