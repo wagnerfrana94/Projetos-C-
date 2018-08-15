@@ -14,7 +14,7 @@ namespace ConectFirebird
     public partial class ListarCadastros : Form
     {
         public Form1 formPrincipal;
-        string acesso = @"DataSource=localhost; Database=C:arq.fdb; username= SYSDBA; password = masterkey";
+        string acesso = @"DataSource=localhost; Database=C:\Users\wagner\Desktop\teste.fdb; username= SYSDBA; password = masterkey";
         FbConnection conn;
 
         public ListarCadastros(Form1 formPrincipal)
