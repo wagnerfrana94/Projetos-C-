@@ -44,12 +44,14 @@
             // 
             // buttonCadastrar
             // 
+            this.buttonCadastrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonCadastrar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCadastrar.Location = new System.Drawing.Point(131, 226);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(234, 23);
             this.buttonCadastrar.TabIndex = 0;
             this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // groupBox1
@@ -105,7 +107,6 @@
             this.labelNome.Size = new System.Drawing.Size(35, 13);
             this.labelNome.TabIndex = 4;
             this.labelNome.Text = "Nome";
-            
             // 
             // textBoxSenha
             // 

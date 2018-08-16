@@ -31,37 +31,43 @@ namespace ConectFirebird
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-            conn = new FbConnection(acesso);
-            string sqlIncluir = "INSERT INTO cadastro(ind, nome, cpf)"
-            + "Values(" +textBoxNome.Text + ", ' " +textBoxCpf.Text + " ');";
-            //FbCommand tb = new FbCommand("CREATE TABLE cadastro (nome, cpf);", conn);
-            FbCommand cmd = new FbCommand(sqlIncluir, conn);
-            try
-            {
-                conn.Open();
-                MessageBox.Show("OKKKK!");
-                // tb.ExecuteNonQuery();
-                cmd.ExecuteNonQuery();
+
+            if (!String.IsNullOrEmpty(textBoxNome.Text) && !String.IsNullOrEmpty(textBoxCpf.Text) &&
+                !String.IsNullOrEmpty(textBoxTelefone.Text) && !String.IsNullOrEmpty(textBoxSenha.Text)){
+
+                conn = new FbConnection(acesso);
+                int id = 1;
+                string sqlIncluir = "INSERT INTO CADASTRO (id, nome, cpf, telefone, senha) Values('" + id + "','" + textBoxNome.Text + "','" + textBoxCpf.Text + "','" + textBoxTelefone.Text + "','" + textBoxSenha.Text + "');";
+                FbCommand cmd = new FbCommand(sqlIncluir, conn);
+
+
+                try
+                {
+                    conn.Open();
+                    int resultado = cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro realizado com sucesso!" + resultado);
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Erro ao cadastrar! " + ex);
+
+                }
+                finally
+                {
+                    conn.Close();
+                }
 
             }
-            catch (Exception ex)
+            else
             {
-
-                MessageBox.Show("Erro ao cadastrar!"+ex);
-
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            
+                MessageBox.Show("Insira os dados corretamente!");
+            }            
             
             
 
         }
-
-       
 
         private void buttonListar_Click(object sender, EventArgs e)
         {
