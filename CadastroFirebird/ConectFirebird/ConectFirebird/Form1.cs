@@ -16,11 +16,13 @@ namespace ConectFirebird
     {
         string acesso = @"DataSource=localhost; Database=C:\Users\wagner\Desktop\test.fdb; User=SYSDBA; Password = masterkey; Port=3050; Dialect=3";
         private static FbConnection conn;
+        int id;
 
 
         public Form1()
         {
             InitializeComponent();
+            id = 0; 
                 
         }
 
@@ -36,7 +38,7 @@ namespace ConectFirebird
                 !String.IsNullOrEmpty(textBoxTelefone.Text) && !String.IsNullOrEmpty(textBoxSenha.Text)){
 
                 conn = new FbConnection(acesso);
-                int id = 1;
+                id++;
                 string sqlIncluir = "INSERT INTO CADASTRO (id, nome, cpf, telefone, senha) Values('" + id + "','" + textBoxNome.Text + "','" + textBoxCpf.Text + "','" + textBoxTelefone.Text + "','" + textBoxSenha.Text + "');";
                 FbCommand cmd = new FbCommand(sqlIncluir, conn);
 
